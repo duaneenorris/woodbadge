@@ -264,6 +264,18 @@ void loop() {
       current_wrong = current_wrong | current_active;
       current_active = 0;
     }
+    else
+    {
+      set_wrong_led(BEAVER_INDEX, LOW);
+      set_wrong_led(BOBWHITE_INDEX, LOW);
+      set_wrong_led(EAGLE_INDEX, LOW);
+      set_wrong_led(FOX_INDEX, LOW);
+      set_wrong_led(OWL_INDEX, LOW);
+      set_wrong_led(BEAR_INDEX, LOW);
+      set_wrong_led(BUFFALO_INDEX, LOW);
+      set_wrong_led(ANTELOPE_INDEX, LOW);
+      current_wrong = 0xFF;
+    }
   }
 }
 
